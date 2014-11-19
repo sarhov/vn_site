@@ -100,8 +100,8 @@
 }
 
 /* line 125, ../sass/_base.scss */
-.test5 {
-  font-family: "HelveticaNeueCyr-Light";
+.test5, body {
+  font-family: "HelveticaNeueCyr-Light", "Helvetica", sans-serif;
 }
 
 /* line 128, ../sass/_base.scss */
@@ -145,14 +145,79 @@
 }
 
 /* END extends */
-/* line 255, ../sass/_base.scss */
+/* line 166, ../sass/_base.scss */
+.test1:after {
+  content: ' - hnc_thin-italic';
+}
+
+/* line 173, ../sass/_base.scss */
+.test2:after {
+  content: ' - hnc_thin';
+}
+
+/* line 180, ../sass/_base.scss */
+.test3:after {
+  content: ' - hnc_roman';
+}
+
+/* line 187, ../sass/_base.scss */
+.test4:after {
+  content: ' - hnc_medium';
+}
+
+/* line 194, ../sass/_base.scss */
+.test5:after {
+  content: ' - hnc_light';
+}
+
+/* line 201, ../sass/_base.scss */
+.test6:after {
+  content: ' - hnc_italic';
+}
+
+/* line 208, ../sass/_base.scss */
+.test7:after {
+  content: ' - hnc_bold-italic';
+}
+
+/* line 215, ../sass/_base.scss */
+.test8:after {
+  content: ' - hnc_bold';
+}
+
+/* line 222, ../sass/_base.scss */
+.test9:after {
+  content: ' - hnc_light-italic';
+}
+
+/* line 229, ../sass/_base.scss */
+.test10:after {
+  content: ' - hnc_ultra-light-italic';
+}
+
+/* line 236, ../sass/_base.scss */
+.test11:after {
+  content: ' - hnc_ultra-light-0';
+}
+
+/* line 243, ../sass/_base.scss */
+.test12:after {
+  content: ' - hnc_black';
+}
+
+/* line 250, ../sass/_base.scss */
+.test13:after {
+  content: ' - hnc_black-italic';
+}
+
+/* line 294, ../sass/_base.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 259, ../sass/_base.scss */
+/* line 298, ../sass/_base.scss */
 .clearfix {
   *zoom: 1;
   background: none;
@@ -165,37 +230,48 @@
 }
 
 /* unvisited link */
-/* line 265, ../sass/_base.scss */
+/* line 304, ../sass/_base.scss */
 a:link {
   color: #ddd;
 }
 
 /* visited link */
-/* line 270, ../sass/_base.scss */
+/* line 309, ../sass/_base.scss */
 a:visited {
   color: #ccc;
 }
 
 /* mouse over link */
-/* line 275, ../sass/_base.scss */
+/* line 314, ../sass/_base.scss */
 a:hover {
   color: #9c0;
 }
 
 /* selected link */
-/* line 280, ../sass/_base.scss */
+/* line 319, ../sass/_base.scss */
 a:active {
   color: yellow;
 }
 
-/* line 284, ../sass/_base.scss */
+/* line 323, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 288, ../sass/_base.scss */
+/* line 327, ../sass/_base.scss */
 img {
   max-height: 100%;
   max-width: 100%;
   height: auto;
+}
+
+/* line 6, ../sass/main.scss */
+.fonts-test {
+  padding: 10px;
+  background: #ddd;
+  position: fixed;
+  width: 300px;
+  left: 0;
+  top: 0;
+  z-index: 9999;
 }

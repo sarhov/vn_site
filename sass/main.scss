@@ -1,3 +1,14 @@
 @charset "utf-8";
 @import "base";
 
+// fonts-test, need to be deleted 
+
+.fonts-test{
+  padding: 10px;
+  background:#ddd;
+  position: fixed;
+  width: 300px;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
