@@ -1,0 +1,292 @@
+@import "compass";
+
+/* font faces */
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-UltraLightItalic';
+  src: url('../fonts/HelveticaNeueCyr-UltraLightItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-UltraLight_0';
+  src: url('../fonts/HelveticaNeueCyr-UltraLight_0.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-ThinItalic';
+  src: url('../fonts/HelveticaNeueCyr-ThinItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Thin';
+  src: url('../fonts/HelveticaNeueCyr-Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Medium';
+  src: url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-LightItalic';
+  src: url('../fonts/HelveticaNeueCyr-LightItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Italic';
+  src: url('../fonts/HelveticaNeueCyr-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-BoldItalic';
+  src: url('../fonts/HelveticaNeueCyr-BoldItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Bold';
+  src:  url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-BlackItalic';
+  src: url('../fonts/HelveticaNeueCyr-BlackItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Black';
+  src: url('../fonts/HelveticaNeueCyr-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* END font-faces */
+
+
+
+
+
+
+/* extends for font families */
+
+%hnc_thin-italic{
+  font-family: 'HelveticaNeueCyr-ThinItalic' ;
+} 
+%hnc_thin{
+  font-family: 'HelveticaNeueCyr-Thin' ;
+} 
+%hnc_roman{
+  font-family: 'HelveticaNeueCyr-Roman' ;
+} 
+%hnc_medium{
+  font-family: 'HelveticaNeueCyr-Medium' ;
+} 
+
+%hnc_light{
+  font-family: 'HelveticaNeueCyr-Light' ;
+} 
+%hnc_italic{
+  font-family: 'HelveticaNeueCyr-Italic' ;
+} 
+
+%hnc_bold-italic{
+  font-family: 'HelveticaNeueCyr-BoldItalic' ;
+} 
+
+%hnc_bold{
+  font-family: 'HelveticaNeueCyr-Bold' ;
+} 
+
+%hnc_light-italic{
+  font-family: 'HelveticaNeueCyr-LightItalic' ;
+} 
+
+%hnc_ultra-light-italic{
+  font-family: 'HelveticaNeueCyr-UltraLightItalic' ;
+} 
+
+
+%hnc_ultra-light-0{
+  font-family: 'HelveticaNeueCyr-UltraLight_0' ;
+} 
+
+
+%hnc_black{
+  font-family: 'HelveticaNeueCyr-Black' ;
+} 
+
+
+%hnc_black-italic{
+  font-family: 'HelveticaNeueCyr-BlackItalic' ;
+} 
+
+/* END extends */
+
+.test1{
+  @extend %hnc_thin-italic;
+}
+
+.test2{
+  @extend %hnc_thin;
+}
+
+.test3{
+  @extend %hnc_roman;
+}
+
+.test4{
+  @extend %hnc_medium;
+}
+
+.test5{
+  @extend %hnc_light;
+}
+
+.test6{
+  @extend %hnc_italic;
+}
+
+.test7{
+  @extend %hnc_bold-italic;
+}
+
+.test9{
+  @extend %hnc_light-italic;
+}
+
+.test10{
+  @extend %hnc_ultra-light-italic;
+}
+
+.test11{
+  @extend %hnc_ultra-light-0;
+}
+
+.test12{
+  @extend %hnc_black;
+}
+
+.test13{
+  @extend %hnc_black-italic;
+}
+
+
+
+
+// Our variables
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+// $spacing-unit:     30px;
+
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+// @mixin media-query($device) {
+//     @media screen and (max-width: $device) {
+//         @content;
+//     }
+// }
+
+*, *:before, *:after {
+    @include box-sizing(border-box);
+}
+
+.clearfix {
+    @include pie-clearfix;
+    background: none;
+}
+
+/* unvisited link */
+a:link {
+    color: #ddd;
+}
+
+/* visited link */
+a:visited {
+    color: #ccc;
+}
+
+/* mouse over link */
+a:hover {
+    color: #9c0;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+
+}
