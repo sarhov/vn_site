@@ -29,7 +29,13 @@
   width: 49px;
   height: 41px;
   color: inherit;
-  @include transition(0.4s);
+  // @include transition(0.4s);
+}
+
+.icon-search{
+  width: 15px;
+  height: 15px;  
+  color: inherit;
 }
 
 // #icon-logo .path1 {
@@ -51,9 +57,14 @@
 //   fill: currentcolor;
 // }
 
+.main-header{
+  margin-bottom: 22px;
+}
+
+
 .site-logo.site-logo{
   color: #004b7b ; 
-  @include transition(0.5s);
+  // @include transition(0.5s);
   &:hover {
     color: lighten(#004b7b, 10%);
   }
@@ -61,6 +72,8 @@
 
 .site-logo{
   text-transform: uppercase;
+  float: left;
+  margin-top: 15px;
   @extend %hnc_medium;
   &__title{
     font-size: 24px;
@@ -71,3 +84,127 @@
     margin-top: 3px ;
   }
 }
+
+// search
+
+.search{
+  position: relative;
+  float: right;
+  margin-top: 22px;
+  &__text{
+    background: none;
+    border: 1px solid ;
+    width: 100%;
+    padding: 3px 30px 3px 10px ;
+    border: 1px solid #dee1e3;
+    border-radius: 4px; 
+    width: 160px;
+    height: 31px;
+    // line-height: 31px;
+  }
+  &__submit{
+    background:none;
+    border: none;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    cursor: pointer;
+    color: #b1b1b1;
+    &:active, &:hover{
+      padding: 0;
+      margin: 0;
+    }
+    svg{
+      width: 15px;
+    }
+  }
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #949393;
+    font-size: 14px;
+    // text-shadow: 1px 0 1px #e5e5e5;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #949393;
+   font-size: 14px;
+   // text-shadow: 1px 0 1px #e5e5e5;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #949393;
+   font-size: 14px;
+   // text-shadow: 1px 0 1px #e5e5e5;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #949393;
+   font-size: 14px;
+   // text-shadow: 1px 0 1px #e5e5e5;
+}
+
+
+
+/* the top bar */
+
+.top-bar{
+  height: 75px;
+  overflow: hidden;
+  background:url('../images/top-bar-bg.png') 50% 100% repeat #004d7d;
+  padding-top: 30px;
+  &__menu{
+    position: relative;
+    @extend %hnc_roman;
+  }
+
+  &__item{
+    float: left;
+    margin-left: 10px;
+    font-size: 17px;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:not(:first-child):before{
+      color: #fff;
+      content: '/';
+      vertical-align: top;
+      display: inline-block;
+      margin-right: 8px;
+      float: left;
+      @extend %hnc_light;
+    }
+  }
+  &__link{
+    text-decoration: underline;
+    color: #FFF;
+    &:hover, &.is-active{
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

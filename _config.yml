@@ -12,3 +12,17 @@ github_username:  sarhov
 
 # Build settings
 markdown: kramdown
+
+top-nav:
+- title: Новости  
+  url: /news.html
+- title: Статьи  
+  url: /articles.html
+- title: Аудио  
+  url: /audio.html
+- title: Видео  
+  url: /vidoes.html
+- title: Толковый словарь  
+  url: /dictionary.html
+- title: О проекте  
+  url: /about_project.html

@@ -49,10 +49,23 @@ q:before, q:after {
   content: none;
 }
 
-/* line 43, ../sass/_base.scss */
+/* line 44, ../sass/_base.scss */
+* {
+  -moz-appearance: none !important;
+}
+
+/* line 47, ../sass/_base.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* line 52, ../sass/_base.scss */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 /* font faces */
@@ -136,145 +149,145 @@ table {
 }
 /* END font-faces */
 /* extends for font families */
-/* line 160, ../sass/_base.scss */
+/* line 170, ../sass/_base.scss */
 .test1 {
   font-family: "HelveticaNeueCyr-ThinItalic";
 }
 
-/* line 163, ../sass/_base.scss */
+/* line 173, ../sass/_base.scss */
 .test2 {
   font-family: "HelveticaNeueCyr-Thin";
 }
 
-/* line 166, ../sass/_base.scss */
-.test3 {
+/* line 176, ../sass/_base.scss */
+.test3, .top-bar__menu {
   font-family: "HelveticaNeueCyr-Roman";
 }
 
-/* line 169, ../sass/_base.scss */
+/* line 179, ../sass/_base.scss */
 .test4, .site-logo {
   font-family: "HelveticaNeueCyr-Medium";
 }
 
-/* line 173, ../sass/_base.scss */
-.test5, body {
+/* line 183, ../sass/_base.scss */
+.test5, body, .top-bar__item:not(:first-child):before {
   font-family: "HelveticaNeueCyr-Light", "Helvetica", sans-serif;
 }
 
-/* line 176, ../sass/_base.scss */
+/* line 186, ../sass/_base.scss */
 .test6 {
   font-family: "HelveticaNeueCyr-Italic";
 }
 
-/* line 180, ../sass/_base.scss */
+/* line 190, ../sass/_base.scss */
 .test7 {
   font-family: "HelveticaNeueCyr-BoldItalic";
 }
 
-/* line 184, ../sass/_base.scss */
+/* line 194, ../sass/_base.scss */
 .test8 {
   font-family: "HelveticaNeueCyr-Bold";
 }
 
-/* line 188, ../sass/_base.scss */
+/* line 198, ../sass/_base.scss */
 .test9 {
   font-family: "HelveticaNeueCyr-LightItalic";
 }
 
-/* line 192, ../sass/_base.scss */
+/* line 202, ../sass/_base.scss */
 .test10 {
   font-family: "HelveticaNeueCyr-UltraLightItalic";
 }
 
-/* line 197, ../sass/_base.scss */
+/* line 207, ../sass/_base.scss */
 .test11 {
   font-family: "HelveticaNeueCyr-UltraLight_0";
 }
 
-/* line 202, ../sass/_base.scss */
+/* line 212, ../sass/_base.scss */
 .test12 {
   font-family: "HelveticaNeueCyr-Black";
 }
 
-/* line 207, ../sass/_base.scss */
+/* line 217, ../sass/_base.scss */
 .test13 {
   font-family: "HelveticaNeueCyr-BlackItalic";
 }
 
 /* END extends */
-/* line 214, ../sass/_base.scss */
+/* line 224, ../sass/_base.scss */
 .test1:after {
   content: ' - hnc_thin-italic';
 }
 
-/* line 221, ../sass/_base.scss */
+/* line 231, ../sass/_base.scss */
 .test2:after {
   content: ' - hnc_thin';
 }
 
-/* line 228, ../sass/_base.scss */
+/* line 238, ../sass/_base.scss */
 .test3:after {
   content: ' - hnc_roman';
 }
 
-/* line 235, ../sass/_base.scss */
+/* line 245, ../sass/_base.scss */
 .test4:after {
   content: ' - hnc_medium';
 }
 
-/* line 242, ../sass/_base.scss */
+/* line 252, ../sass/_base.scss */
 .test5:after {
   content: ' - hnc_light';
 }
 
-/* line 249, ../sass/_base.scss */
+/* line 259, ../sass/_base.scss */
 .test6:after {
   content: ' - hnc_italic';
 }
 
-/* line 256, ../sass/_base.scss */
+/* line 266, ../sass/_base.scss */
 .test7:after {
   content: ' - hnc_bold-italic';
 }
 
-/* line 263, ../sass/_base.scss */
+/* line 273, ../sass/_base.scss */
 .test8:after {
   content: ' - hnc_bold';
 }
 
-/* line 270, ../sass/_base.scss */
+/* line 280, ../sass/_base.scss */
 .test9:after {
   content: ' - hnc_light-italic';
 }
 
-/* line 277, ../sass/_base.scss */
+/* line 287, ../sass/_base.scss */
 .test10:after {
   content: ' - hnc_ultra-light-italic';
 }
 
-/* line 284, ../sass/_base.scss */
+/* line 294, ../sass/_base.scss */
 .test11:after {
   content: ' - hnc_ultra-light-0';
 }
 
-/* line 291, ../sass/_base.scss */
+/* line 301, ../sass/_base.scss */
 .test12:after {
   content: ' - hnc_black';
 }
 
-/* line 298, ../sass/_base.scss */
+/* line 308, ../sass/_base.scss */
 .test13:after {
   content: ' - hnc_black-italic';
 }
 
-/* line 342, ../sass/_base.scss */
+/* line 352, ../sass/_base.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 346, ../sass/_base.scss */
+/* line 356, ../sass/_base.scss */
 .clearfix {
   *zoom: 1;
   background: none;
@@ -286,48 +299,24 @@ table {
   clear: both;
 }
 
-/* unvisited link */
-/* line 352, ../sass/_base.scss */
-a:link {
-  color: #ddd;
-}
-
-/* visited link */
-/* line 357, ../sass/_base.scss */
-a:visited {
-  color: #ccc;
-}
-
-/* mouse over link */
-/* line 362, ../sass/_base.scss */
-a:hover {
-  color: #9c0;
-}
-
-/* selected link */
-/* line 367, ../sass/_base.scss */
-a:active {
-  color: yellow;
-}
-
-/* line 371, ../sass/_base.scss */
+/* line 381, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 375, ../sass/_base.scss */
+/* line 385, ../sass/_base.scss */
 img {
   max-height: 100%;
   max-width: 100%;
   height: auto;
 }
 
-/* line 385, ../sass/_base.scss */
+/* line 395, ../sass/_base.scss */
 .wrapper {
   width: 100%;
 }
 
-/* line 389, ../sass/_base.scss */
+/* line 399, ../sass/_base.scss */
 .inner {
   width: 970px;
   padding: 0 15px;
@@ -364,30 +353,36 @@ img {
   width: 49px;
   height: 41px;
   color: inherit;
-  -moz-transition: 0.4s;
-  -o-transition: 0.4s;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
-/* line 54, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
+.icon-search {
+  width: 15px;
+  height: 15px;
+  color: inherit;
+}
+
+/* line 60, ../sass/main.scss */
+.main-header {
+  margin-bottom: 22px;
+}
+
+/* line 65, ../sass/main.scss */
 .site-logo.site-logo {
   color: #004b7b;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
-/* line 57, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .site-logo.site-logo:hover {
   color: #006aae;
 }
 
-/* line 62, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 .site-logo {
   text-transform: uppercase;
+  float: left;
+  margin-top: 15px;
 }
-/* line 65, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .site-logo__title {
   font-size: 24px;
   letter-spacing: 1px;
@@ -395,4 +390,115 @@ img {
   display: inline-block;
   vertical-align: middle;
   margin-top: 3px;
+}
+
+/* line 90, ../sass/main.scss */
+.search {
+  position: relative;
+  float: right;
+  margin-top: 22px;
+}
+/* line 94, ../sass/main.scss */
+.search__text {
+  background: none;
+  border: 1px solid;
+  width: 100%;
+  padding: 3px 30px 3px 10px;
+  border: 1px solid #dee1e3;
+  border-radius: 4px;
+  width: 160px;
+  height: 31px;
+}
+/* line 105, ../sass/main.scss */
+.search__submit {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  cursor: pointer;
+  color: #b1b1b1;
+}
+/* line 116, ../sass/main.scss */
+.search__submit:active, .search__submit:hover {
+  padding: 0;
+  margin: 0;
+}
+/* line 120, ../sass/main.scss */
+.search__submit svg {
+  width: 15px;
+}
+
+/* line 126, ../sass/main.scss */
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #949393;
+  font-size: 14px;
+}
+
+/* line 131, ../sass/main.scss */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #949393;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* line 137, ../sass/main.scss */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #949393;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* line 143, ../sass/main.scss */
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #949393;
+  font-size: 14px;
+}
+
+/* the top bar */
+/* line 153, ../sass/main.scss */
+.top-bar {
+  height: 75px;
+  overflow: hidden;
+  background: url("../images/top-bar-bg.png") 50% 100% repeat #004d7d;
+  padding-top: 30px;
+}
+/* line 158, ../sass/main.scss */
+.top-bar__menu {
+  position: relative;
+}
+/* line 163, ../sass/main.scss */
+.top-bar__item {
+  float: left;
+  margin-left: 10px;
+  font-size: 17px;
+}
+/* line 167, ../sass/main.scss */
+.top-bar__item:first-child {
+  margin-left: 0;
+}
+/* line 170, ../sass/main.scss */
+.top-bar__item:not(:first-child):before {
+  color: #fff;
+  content: '/';
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 8px;
+  float: left;
+}
+/* line 180, ../sass/main.scss */
+.top-bar__link {
+  text-decoration: underline;
+  color: #FFF;
+}
+/* line 183, ../sass/main.scss */
+.top-bar__link:hover, .top-bar__link.is-active {
+  text-decoration: none;
 }

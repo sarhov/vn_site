@@ -1,12 +1,39 @@
 <header class="wrapper main-header">
-  <div class="header-inner inner">
-    <a href="" class="site-logo">
+  <div class="header-inner inner clearfix">
+    <a href="{{site.baseurl}}" class="site-logo">
       <svg class="icon icon-logo site-logo__logo"><use xlink:href="#icon-logo"></use></svg>
       <!-- /.site-logo__logo -->
       <h1 class="site-logo__title">{{site.title}}</h1>
       <!-- /.site-logo__title -->
     </a>
+    <!-- logo -->
+    <div class="search search_top">
+      <form action="" class="search__form search__form_top">
+        <input type="search" class="search__text" placeholder="Поиск">
+        <button class="search__submit">
+           <svg class="icon icon-search search__icon"><use xlink:href="#icon-search"></use></svg>
+        </button>
+      </form>
+      <!-- /.search__form search__form_top -->
+    </div>
+    <!-- /.search search_top -->
   </div>
   <!-- /.header-inner inner -->
 </header>
 <!-- /.wrapper main-header -->
+
+<nav class="top-bar wrapper">
+  <div class="inner">
+    <ul class="top-bar__menu clearfix">
+      {% for nav in site.top-nav %}
+      <li class="top-bar__item">
+        <a href="{{nav.url}}" class="top-bar__link {% if nav.url contains page.url %} is-active {% endif %}">{{nav.title}}</a>
+      </li>
+      <!-- /.top-bar__item --> 
+      {% endfor %}
+    </ul>
+    <!-- /.top-bar__menu -->
+  </div>
+  <!-- /.inner -->
+</nav>
+<!-- /.top-bar wrapper -->
