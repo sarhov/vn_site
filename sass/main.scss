@@ -11,4 +11,37 @@
   left: 0;
   top: 0;
   z-index: 9999;
+  display: none;
+}
+
+.body{
+  background:#fff;
+}
+
+.icon {
+  display: inline-block;
+  color: #000000;
+  fill: currentColor;
+}
+.icon-logo {
+  width: 49px;
+  height: 41px;
+}
+#icon-logo .path1 {
+  fill: currentcolor;
+}
+#icon-logo .path2 {
+  fill: currentcolor;
+}
+#icon-logo .path3 {
+  fill: currentcolor;
+}
+#icon-logo .path4 {
+  fill: currentcolor;
+}
+#icon-logo .path5 {
+  fill: currentcolor;
+}
+#icon-logo .path6 {
+  fill: currentcolor;
 }

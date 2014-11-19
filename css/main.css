@@ -265,6 +265,18 @@ img {
   height: auto;
 }
 
+/* line 337, ../sass/_base.scss */
+.wrapper {
+  width: 100%;
+}
+
+/* line 341, ../sass/_base.scss */
+.inner {
+  width: 970px;
+  padding: 15px;
+  margin: auto;
+}
+
 /* line 6, ../sass/main.scss */
 .fonts-test {
   padding: 10px;
@@ -274,4 +286,53 @@ img {
   left: 0;
   top: 0;
   z-index: 9999;
+  display: none;
+}
+
+/* line 17, ../sass/main.scss */
+.body {
+  background: #fff;
+}
+
+/* line 21, ../sass/main.scss */
+.icon {
+  display: inline-block;
+  color: #000000;
+  fill: currentColor;
+}
+
+/* line 26, ../sass/main.scss */
+.icon-logo {
+  width: 49px;
+  height: 41px;
+}
+
+/* line 30, ../sass/main.scss */
+#icon-logo .path1 {
+  fill: currentcolor;
+}
+
+/* line 33, ../sass/main.scss */
+#icon-logo .path2 {
+  fill: currentcolor;
+}
+
+/* line 36, ../sass/main.scss */
+#icon-logo .path3 {
+  fill: currentcolor;
+}
+
+/* line 39, ../sass/main.scss */
+#icon-logo .path4 {
+  fill: currentcolor;
+}
+
+/* line 42, ../sass/main.scss */
+#icon-logo .path5 {
+  fill: currentcolor;
+}
+
+/* line 45, ../sass/main.scss */
+#icon-logo .path6 {
+  fill: currentcolor;
 }

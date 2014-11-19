@@ -333,3 +333,13 @@ img {
 body {
   @extend %hnc_light;
 }
+
+.wrapper{
+  width: 100%;
+}
+
+.inner{
+  width: 970px;
+  padding:15px;
+  margin: auto;
+}
