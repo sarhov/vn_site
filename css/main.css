@@ -114,6 +114,11 @@
   font-family: "HelveticaNeueCyr-BoldItalic";
 }
 
+/* line 136, ../sass/_base.scss */
+.test8 {
+  font-family: "HelveticaNeueCyr-Bold";
+}
+
 /* line 140, ../sass/_base.scss */
 .test9 {
   font-family: "HelveticaNeueCyr-LightItalic";
@@ -140,14 +145,14 @@
 }
 
 /* END extends */
-/* line 251, ../sass/_base.scss */
+/* line 255, ../sass/_base.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 255, ../sass/_base.scss */
+/* line 259, ../sass/_base.scss */
 .clearfix {
   *zoom: 1;
   background: none;
@@ -160,35 +165,35 @@
 }
 
 /* unvisited link */
-/* line 261, ../sass/_base.scss */
+/* line 265, ../sass/_base.scss */
 a:link {
   color: #ddd;
 }
 
 /* visited link */
-/* line 266, ../sass/_base.scss */
+/* line 270, ../sass/_base.scss */
 a:visited {
   color: #ccc;
 }
 
 /* mouse over link */
-/* line 271, ../sass/_base.scss */
+/* line 275, ../sass/_base.scss */
 a:hover {
   color: #9c0;
 }
 
 /* selected link */
-/* line 276, ../sass/_base.scss */
+/* line 280, ../sass/_base.scss */
 a:active {
   color: yellow;
 }
 
-/* line 280, ../sass/_base.scss */
+/* line 284, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 284, ../sass/_base.scss */
+/* line 288, ../sass/_base.scss */
 img {
   max-height: 100%;
   max-width: 100%;

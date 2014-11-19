@@ -190,6 +190,10 @@
   @extend %hnc_bold-italic;
 }
 
+.test8{
+  @extend %hnc_bold;
+}
+
 .test9{
   @extend %hnc_light-italic;
 }
