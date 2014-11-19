@@ -22,26 +22,52 @@
   display: inline-block;
   color: #000000;
   fill: currentColor;
+  vertical-align: middle;  
 }
+
 .icon-logo {
   width: 49px;
   height: 41px;
+  color: inherit;
+  @include transition(0.4s);
 }
-#icon-logo .path1 {
-  fill: currentcolor;
+
+// #icon-logo .path1 {
+//   fill: currentcolor;
+// }
+// #icon-logo .path2 {
+//   fill: currentcolor;
+// }
+// #icon-logo .path3 {
+//   fill: currentcolor;
+// }
+// #icon-logo .path4 {
+//   fill: currentcolor;
+// }
+// #icon-logo .path5 {
+//   fill: currentcolor;
+// }
+// #icon-logo .path6 {
+//   fill: currentcolor;
+// }
+
+.site-logo.site-logo{
+  color: #004b7b ; 
+  @include transition(0.5s);
+  &:hover {
+    color: lighten(#004b7b, 10%);
+  }
 }
-#icon-logo .path2 {
-  fill: currentcolor;
-}
-#icon-logo .path3 {
-  fill: currentcolor;
-}
-#icon-logo .path4 {
-  fill: currentcolor;
-}
-#icon-logo .path5 {
-  fill: currentcolor;
-}
-#icon-logo .path6 {
-  fill: currentcolor;
+
+.site-logo{
+  text-transform: uppercase;
+  @extend %hnc_medium;
+  &__title{
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 3px ;
+  }
 }

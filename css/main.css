@@ -1,3 +1,60 @@
+/* line 4, ../sass/_base.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 25, ../sass/_base.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 29, ../sass/_base.scss */
+body {
+  line-height: 1;
+}
+
+/* line 32, ../sass/_base.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 35, ../sass/_base.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 38, ../sass/_base.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 43, ../sass/_base.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* font faces */
 @font-face {
   font-family: 'HelveticaNeueCyr-UltraLightItalic';
@@ -79,145 +136,145 @@
 }
 /* END font-faces */
 /* extends for font families */
-/* line 112, ../sass/_base.scss */
+/* line 160, ../sass/_base.scss */
 .test1 {
   font-family: "HelveticaNeueCyr-ThinItalic";
 }
 
-/* line 115, ../sass/_base.scss */
+/* line 163, ../sass/_base.scss */
 .test2 {
   font-family: "HelveticaNeueCyr-Thin";
 }
 
-/* line 118, ../sass/_base.scss */
+/* line 166, ../sass/_base.scss */
 .test3 {
   font-family: "HelveticaNeueCyr-Roman";
 }
 
-/* line 121, ../sass/_base.scss */
-.test4 {
+/* line 169, ../sass/_base.scss */
+.test4, .site-logo {
   font-family: "HelveticaNeueCyr-Medium";
 }
 
-/* line 125, ../sass/_base.scss */
+/* line 173, ../sass/_base.scss */
 .test5, body {
   font-family: "HelveticaNeueCyr-Light", "Helvetica", sans-serif;
 }
 
-/* line 128, ../sass/_base.scss */
+/* line 176, ../sass/_base.scss */
 .test6 {
   font-family: "HelveticaNeueCyr-Italic";
 }
 
-/* line 132, ../sass/_base.scss */
+/* line 180, ../sass/_base.scss */
 .test7 {
   font-family: "HelveticaNeueCyr-BoldItalic";
 }
 
-/* line 136, ../sass/_base.scss */
+/* line 184, ../sass/_base.scss */
 .test8 {
   font-family: "HelveticaNeueCyr-Bold";
 }
 
-/* line 140, ../sass/_base.scss */
+/* line 188, ../sass/_base.scss */
 .test9 {
   font-family: "HelveticaNeueCyr-LightItalic";
 }
 
-/* line 144, ../sass/_base.scss */
+/* line 192, ../sass/_base.scss */
 .test10 {
   font-family: "HelveticaNeueCyr-UltraLightItalic";
 }
 
-/* line 149, ../sass/_base.scss */
+/* line 197, ../sass/_base.scss */
 .test11 {
   font-family: "HelveticaNeueCyr-UltraLight_0";
 }
 
-/* line 154, ../sass/_base.scss */
+/* line 202, ../sass/_base.scss */
 .test12 {
   font-family: "HelveticaNeueCyr-Black";
 }
 
-/* line 159, ../sass/_base.scss */
+/* line 207, ../sass/_base.scss */
 .test13 {
   font-family: "HelveticaNeueCyr-BlackItalic";
 }
 
 /* END extends */
-/* line 166, ../sass/_base.scss */
+/* line 214, ../sass/_base.scss */
 .test1:after {
   content: ' - hnc_thin-italic';
 }
 
-/* line 173, ../sass/_base.scss */
+/* line 221, ../sass/_base.scss */
 .test2:after {
   content: ' - hnc_thin';
 }
 
-/* line 180, ../sass/_base.scss */
+/* line 228, ../sass/_base.scss */
 .test3:after {
   content: ' - hnc_roman';
 }
 
-/* line 187, ../sass/_base.scss */
+/* line 235, ../sass/_base.scss */
 .test4:after {
   content: ' - hnc_medium';
 }
 
-/* line 194, ../sass/_base.scss */
+/* line 242, ../sass/_base.scss */
 .test5:after {
   content: ' - hnc_light';
 }
 
-/* line 201, ../sass/_base.scss */
+/* line 249, ../sass/_base.scss */
 .test6:after {
   content: ' - hnc_italic';
 }
 
-/* line 208, ../sass/_base.scss */
+/* line 256, ../sass/_base.scss */
 .test7:after {
   content: ' - hnc_bold-italic';
 }
 
-/* line 215, ../sass/_base.scss */
+/* line 263, ../sass/_base.scss */
 .test8:after {
   content: ' - hnc_bold';
 }
 
-/* line 222, ../sass/_base.scss */
+/* line 270, ../sass/_base.scss */
 .test9:after {
   content: ' - hnc_light-italic';
 }
 
-/* line 229, ../sass/_base.scss */
+/* line 277, ../sass/_base.scss */
 .test10:after {
   content: ' - hnc_ultra-light-italic';
 }
 
-/* line 236, ../sass/_base.scss */
+/* line 284, ../sass/_base.scss */
 .test11:after {
   content: ' - hnc_ultra-light-0';
 }
 
-/* line 243, ../sass/_base.scss */
+/* line 291, ../sass/_base.scss */
 .test12:after {
   content: ' - hnc_black';
 }
 
-/* line 250, ../sass/_base.scss */
+/* line 298, ../sass/_base.scss */
 .test13:after {
   content: ' - hnc_black-italic';
 }
 
-/* line 294, ../sass/_base.scss */
+/* line 342, ../sass/_base.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 298, ../sass/_base.scss */
+/* line 346, ../sass/_base.scss */
 .clearfix {
   *zoom: 1;
   background: none;
@@ -230,50 +287,50 @@
 }
 
 /* unvisited link */
-/* line 304, ../sass/_base.scss */
+/* line 352, ../sass/_base.scss */
 a:link {
   color: #ddd;
 }
 
 /* visited link */
-/* line 309, ../sass/_base.scss */
+/* line 357, ../sass/_base.scss */
 a:visited {
   color: #ccc;
 }
 
 /* mouse over link */
-/* line 314, ../sass/_base.scss */
+/* line 362, ../sass/_base.scss */
 a:hover {
   color: #9c0;
 }
 
 /* selected link */
-/* line 319, ../sass/_base.scss */
+/* line 367, ../sass/_base.scss */
 a:active {
   color: yellow;
 }
 
-/* line 323, ../sass/_base.scss */
+/* line 371, ../sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 327, ../sass/_base.scss */
+/* line 375, ../sass/_base.scss */
 img {
   max-height: 100%;
   max-width: 100%;
   height: auto;
 }
 
-/* line 337, ../sass/_base.scss */
+/* line 385, ../sass/_base.scss */
 .wrapper {
   width: 100%;
 }
 
-/* line 341, ../sass/_base.scss */
+/* line 389, ../sass/_base.scss */
 .inner {
   width: 970px;
-  padding: 15px;
+  padding: 0 15px;
   margin: auto;
 }
 
@@ -299,40 +356,43 @@ img {
   display: inline-block;
   color: #000000;
   fill: currentColor;
+  vertical-align: middle;
 }
 
-/* line 26, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 .icon-logo {
   width: 49px;
   height: 41px;
+  color: inherit;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-/* line 30, ../sass/main.scss */
-#icon-logo .path1 {
-  fill: currentcolor;
+/* line 54, ../sass/main.scss */
+.site-logo.site-logo {
+  color: #004b7b;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 57, ../sass/main.scss */
+.site-logo.site-logo:hover {
+  color: #006aae;
 }
 
-/* line 33, ../sass/main.scss */
-#icon-logo .path2 {
-  fill: currentcolor;
+/* line 62, ../sass/main.scss */
+.site-logo {
+  text-transform: uppercase;
 }
-
-/* line 36, ../sass/main.scss */
-#icon-logo .path3 {
-  fill: currentcolor;
-}
-
-/* line 39, ../sass/main.scss */
-#icon-logo .path4 {
-  fill: currentcolor;
-}
-
-/* line 42, ../sass/main.scss */
-#icon-logo .path5 {
-  fill: currentcolor;
-}
-
-/* line 45, ../sass/main.scss */
-#icon-logo .path6 {
-  fill: currentcolor;
+/* line 65, ../sass/main.scss */
+.site-logo__title {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 3px;
 }
