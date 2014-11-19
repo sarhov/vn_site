@@ -26,3 +26,14 @@ top-nav:
   url: /dictionary.html
 - title: О проекте  
   url: /about_project.html
+
+
+bottom-bar-nav:
+- title: Конституция
+- title: Наши права и свободы
+- title: Государство
+- title: Инструменты народовластия
+- title: Самоуправление  
+- title: Экономика
+- title: Общество
+- title: Вечевой колокол

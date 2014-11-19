@@ -27,7 +27,7 @@
     <ul class="top-bar__menu clearfix">
       {% for nav in site.top-nav %}
       <li class="top-bar__item">
-        <a href="{{nav.url}}" class="top-bar__link {% if nav.url contains page.url %} is-active {% endif %}">{{nav.title}}</a>
+        <a href="{{nav.url}}" class="top-bar__link {% if nav.url == page.url %} is-active {% endif %}">{{nav.title}}</a>
       </li>
       <!-- /.top-bar__item --> 
       {% endfor %}
@@ -37,3 +37,23 @@
   <!-- /.inner -->
 </nav>
 <!-- /.top-bar wrapper -->
+
+<nav class="bottom-bar wrapper">
+  <div class="inner">
+    <ul class="bottom-bar__menu clearfix">
+      {% for bottom in site.bottom-bar-nav %} 
+      <li class="bottom-bar__item">
+        <a href="{{bottom.url}}" class="bottom-bar__link {% if bottom.url == page.url %} is-active {% endif %}">
+          {{bottom.title}}
+        </a>
+      </li>
+      <!-- /.bottom-bar__item -->
+    {% endfor %}
+    </ul>
+    <!-- /.bottom-bar__menu -->
+  </div>
+  <!-- /.inner -->
+</nav>
+<!-- /.bottom-bar wrapper -->
+
+{{content}}

@@ -155,6 +155,7 @@
   overflow: hidden;
   background:url('../images/top-bar-bg.png') 50% 100% repeat #004d7d;
   padding-top: 30px;
+  margin-bottom: 17px;
   &__menu{
     position: relative;
     @extend %hnc_roman;
@@ -186,6 +187,36 @@
   }
 }
 
+/* bottom bar */
+
+.bottom-bar{
+  margin-bottom: 20px;
+  &__menu{
+    @extend %hnc_roman;
+  }
+  &__item{
+    float: left;
+    color: #27323c;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    &:not(:last-child):after{
+      content: '|';
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      margin-left: 7px;
+    }
+  }
+  &__link{
+    color: inherit;
+    text-decoration: underline;
+    &:hover, &.is-active{
+      text-decoration: none;
+      color: lighten(#27323c, 10%);
+    }
+  }
+}
 
 
 

@@ -160,7 +160,7 @@ button:focus {
 }
 
 /* line 176, ../sass/_base.scss */
-.test3, .top-bar__menu {
+.test3, .top-bar__menu, .bottom-bar__menu {
   font-family: "HelveticaNeueCyr-Roman";
 }
 
@@ -469,22 +469,23 @@ img {
   overflow: hidden;
   background: url("../images/top-bar-bg.png") 50% 100% repeat #004d7d;
   padding-top: 30px;
+  margin-bottom: 17px;
 }
-/* line 158, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 .top-bar__menu {
   position: relative;
 }
-/* line 163, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 .top-bar__item {
   float: left;
   margin-left: 10px;
   font-size: 17px;
 }
-/* line 167, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 .top-bar__item:first-child {
   margin-left: 0;
 }
-/* line 170, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 .top-bar__item:not(:first-child):before {
   color: #fff;
   content: '/';
@@ -493,12 +494,44 @@ img {
   margin-right: 8px;
   float: left;
 }
-/* line 180, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 .top-bar__link {
   text-decoration: underline;
   color: #FFF;
 }
-/* line 183, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 .top-bar__link:hover, .top-bar__link.is-active {
   text-decoration: none;
+}
+
+/* bottom bar */
+/* line 192, ../sass/main.scss */
+.bottom-bar {
+  margin-bottom: 20px;
+}
+/* line 197, ../sass/main.scss */
+.bottom-bar__item {
+  float: left;
+  color: #27323c;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* line 203, ../sass/main.scss */
+.bottom-bar__item:not(:last-child):after {
+  content: '|';
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  margin-left: 7px;
+}
+/* line 211, ../sass/main.scss */
+.bottom-bar__link {
+  color: inherit;
+  text-decoration: underline;
+}
+/* line 214, ../sass/main.scss */
+.bottom-bar__link:hover, .bottom-bar__link.is-active {
+  text-decoration: none;
+  color: #3b4c5b;
 }
