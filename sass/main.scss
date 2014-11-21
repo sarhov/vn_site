@@ -24,6 +24,10 @@
     color: #000000;
     fill: currentColor;
     vertical-align: middle;
+    &_social{
+      color: #7d8188;
+      width: 20px;
+    }
 }
 
 .icon-logo {
@@ -502,8 +506,12 @@
 
 // bottom-block
 
+.bottom-block-wrapper{
+  margin-bottom: 45px;
+}
+
 .bottom-block {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     &_left {
     float: left; 
         width: $is-left;
@@ -531,4 +539,52 @@
     &_books{
       width: 100%;
     }
+}
+
+.footer{
+  padding: 55px 0 60px 0;
+  background:#f4f5f6;
+}
+
+.footer-box{
+  width: 40%;
+  padding-right: 17px;
+  &_logo{
+    float: right;
+    width: auto;
+  }
+}
+
+.copyright{
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 28px;
+  @extend %hnc_thin;
+}
+
+.footer-links{
+  margin-bottom: 30px;
+  color: #676b71;
+  font-size: 14px;
+  &__link{
+    text-decoration: underline;
+    color: inherit;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__text{
+    margin: 0 3px;
+  }
+}
+
+.socials{
+  &__icon{
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+  }
+  &__link:hover{
+   opacity: 0.8;
+  }
 }
