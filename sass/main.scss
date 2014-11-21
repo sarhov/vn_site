@@ -448,6 +448,21 @@
             margin-bottom: 6px;
         }
     }
+    &_books{
+        float: left;
+        width: 50%;
+        height: auto;
+      .news-list-item__img-link{
+        margin: 0;
+        &:hover{
+          opacity: 0.9;
+        }
+      }
+      img{
+        height: auto;
+        width: 100%;
+      }
+    }
 }
 
 .news-meta {
@@ -489,11 +504,13 @@
 
 .bottom-block {
     margin-bottom: 30px;
-    &__left {
+    &_left {
+    float: left; 
         width: $is-left;
     }
-    &__right {
+    &_right {
         width: $is-right;
+        float: right;
     }
 }
 
@@ -510,5 +527,8 @@
     }
     &__headline {
         margin-bottom: 20px;
+    }
+    &_books{
+      width: 100%;
     }
 }
