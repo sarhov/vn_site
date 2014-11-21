@@ -237,14 +237,14 @@
 .top-block{
   &__left{
     float: left;
-    width: 65%;
+    width: 67%;
     padding-bottom: 15px;
     border-bottom: 1px dotted #b6b6b6;
   }
   &__header{
     height: 50px;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-overflow: ellipsis;
     img{
       display: inline-block;
@@ -256,11 +256,13 @@
     }
   }
   &__headline{
-    @extend %hnc_medium;
-    font-size: 28px;
-    color: #2e343e;
     vertical-align: middle;
     display: inline-block;
+  }
+
+  &__right{
+    float: right;
+    width: 30%;
   }
 }
 
@@ -268,19 +270,23 @@
   &__list{
     list-style: none;
     counter-reset: articles;
+    padding-right: 60px;
   }
 
   &__item{
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 45px;
-    margin-bottom: 10px;
+    height: 41px;
+    margin-bottom: 30px;
     font-size: 20px;
+    &:last-child{
+      margin-bottom: 15px;
+    }
     &::before{
       counter-increment: articles;
       content: counter(articles) ".";
       float: left;
-      width: 65px;
+      width: 70px;
       text-indent: 30px;
       font-size: 24px;
     }
@@ -295,6 +301,28 @@
     }
   }
 }
+
+// top-box
+
+.top-box{
+  height: 117px;
+  padding: 18px 0 0 12px;
+  display: block;
+  &:hover{
+    opacity: 0.9;
+  }
+  &:first-child{
+    background:#e1e1d8 url('../images/top-box-bg_first.png') center top/cover repeat;
+    margin-bottom: 40px;
+  }
+  &:first-child + &{
+    background:#dadada url('../images/top-box-bg_second.png') 100px 100px/cover repeat;
+  }
+  &__headline{
+    margin-bottom: 8px;
+  }
+}
+
 
 
 

@@ -396,8 +396,18 @@ body {
   width: 100%;
 }
 
+a{
+ color: #2e343e;
+}
+
 .inner{
   width: 970px;
   padding:0 15px;
   margin: auto;
+}
+
+.gl-headline{
+      @extend %hnc_medium;
+    font-size: 28px;
+    color: #2e343e;
 }
