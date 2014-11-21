@@ -61,6 +61,20 @@
   margin-bottom: 22px;
 }
 
+.more-link{
+  clear: both;
+  @include pie-clearfix;
+  &__link{
+    display: inline-block;
+    border-bottom: 1px solid #2e343e;
+    font-size: 14px;
+    color: #2e343e;
+    float: right;
+    &:hover{
+    border-bottom-color: transparent;
+  }
+  }
+}
 
 .site-logo.site-logo{
   color: #004b7b ; 
@@ -190,7 +204,7 @@
 /* bottom bar */
 
 .bottom-bar{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   &__menu{
     @extend %hnc_roman;
   }
@@ -214,6 +228,70 @@
     &:hover, &.is-active{
       text-decoration: none;
       color: lighten(#27323c, 10%);
+    }
+  }
+}
+
+/* top-block */
+
+.top-block{
+  &__left{
+    float: left;
+    width: 65%;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #b6b6b6;
+  }
+  &__header{
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    text-overflow: ellipsis;
+    img{
+      display: inline-block;
+      margin-right: 15px;
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }
+  &__headline{
+    @extend %hnc_medium;
+    font-size: 28px;
+    color: #2e343e;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+.top-block-articles{
+  &__list{
+    list-style: none;
+    counter-reset: articles;
+  }
+
+  &__item{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 45px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    &::before{
+      counter-increment: articles;
+      content: counter(articles) ".";
+      float: left;
+      width: 65px;
+      text-indent: 20px;
+      font-size: 24px;
+    }
+  }
+  &__link{
+    text-decoration: underline;
+    overflow: hidden; 
+    display: block; 
+    color: #2e343e;
+    &:hover{
+      text-decoration: none;
     }
   }
 }
