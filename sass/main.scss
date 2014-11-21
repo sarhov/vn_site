@@ -35,6 +35,9 @@
     height: 41px;
     color: inherit;
     // @include transition(0.4s);
+    &_footer{
+      color: #bbbabb;
+    }
 }
 
 .icon-search {
@@ -549,21 +552,26 @@
 .footer-box{
   width: 40%;
   padding-right: 17px;
+  float: left;
+  &_reginfo{
+    width: 46%;
+  }
   &_logo{
     float: right;
     width: auto;
+    float-left: none;
   }
 }
 
 .copyright{
   color: #7f8c8d;
   font-size: 14px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   @extend %hnc_thin;
 }
 
 .footer-links{
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   color: #676b71;
   font-size: 14px;
   &__link{
@@ -587,4 +595,12 @@
   &__link:hover{
    opacity: 0.8;
   }
+}
+
+.reginfo{
+  color: #7f8c8d;
+  font-size: 11px;
+  line-height: 1.6;
+  @extend %hnc_thin;
+  // letter-spacing: 1px;
 }
