@@ -411,3 +411,13 @@ a{
     font-size: 28px;
     color: #2e343e;
 }
+
+// 
+// @TODO: Add docs to border-bottom!
+//
+%bb {
+  border-bottom: 1px dotted #b6b6b6;
+}
+
+$is-left: 67%;
+$is-right: 31%;

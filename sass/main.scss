@@ -235,11 +235,12 @@
 /* top-block */
 
 .top-block{
+  margin-bottom: 15px;
   &__left{
     float: left;
-    width: 67%;
+    width: $is-left;
     padding-bottom: 15px;
-    border-bottom: 1px dotted #b6b6b6;
+    @extend %bb;
   }
   &__header{
     height: 50px;
@@ -262,7 +263,7 @@
 
   &__right{
     float: right;
-    width: 30%;
+    width: $is-right;
   }
 }
 
@@ -321,6 +322,62 @@
   &__headline{
     margin-bottom: 8px;
   }
+}
+
+.news-blocks{
+  float: left;
+  width: $is-left;
+  padding-top: 22px;
+  padding-bottom: 15px;
+  @extend %bb;
+  &__headline{
+    margin-bottom: 20px;
+  }
+}
+
+.center-block{
+  margin-bottom: 30px;
+}
+
+.news-block{
+  height: 150px;
+  margin-bottom: 20px;
+  &__img-link{
+    float: left;
+    margin-right: 20px;
+  }
+  &__img{
+    width: 200px;
+    height: 150px;
+  }
+  &__headline{
+    overflow: hidden;
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+  &__link{
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__short-description{
+    color: #94989f;
+    font-size: 15px;
+    margin-bottom: 7px;
+    line-height: 1.2;
+    @extend %hnc_thin;
+  }
+  &__date{
+    color: #dadada;
+    font-size: 12px;
+  }
+}
+
+.sidebar-block{
+  float: right;
+  width: $is-right;
+  padding: 12px ;
 }
 
 
