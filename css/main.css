@@ -584,7 +584,7 @@ a {
 /* line 239, ../sass/main.scss */
 .top-block__left {
   float: left;
-  width: 67%;
+  width: 66%;
   padding-bottom: 15px;
 }
 /* line 245, ../sass/main.scss */
@@ -680,7 +680,7 @@ a {
 /* line 327, ../sass/main.scss */
 .news-blocks {
   float: left;
-  width: 67%;
+  width: 66%;
   padding-top: 22px;
   padding-bottom: 15px;
 }
@@ -694,51 +694,140 @@ a {
   margin-bottom: 30px;
 }
 
-/* line 342, ../sass/main.scss */
+/* line 353, ../sass/main.scss */
 .news-block {
   height: 150px;
   margin-bottom: 20px;
 }
-/* line 345, ../sass/main.scss */
+/* line 356, ../sass/main.scss */
+.news-block:last-child {
+  margin-bottom: 10px;
+}
+/* line 359, ../sass/main.scss */
 .news-block__img-link {
   float: left;
   margin-right: 20px;
 }
-/* line 349, ../sass/main.scss */
+/* line 363, ../sass/main.scss */
 .news-block__img {
-  width: 200px;
+  width: 203px;
   height: 150px;
 }
-/* line 353, ../sass/main.scss */
+/* line 367, ../sass/main.scss */
 .news-block__headline {
   overflow: hidden;
   font-size: 20px;
   margin-bottom: 14px;
 }
-/* line 358, ../sass/main.scss */
+/* line 372, ../sass/main.scss */
 .news-block__link {
   text-decoration: underline;
 }
-/* line 360, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 .news-block__link:hover {
   text-decoration: none;
 }
-/* line 364, ../sass/main.scss */
+/* line 378, ../sass/main.scss */
 .news-block__short-description {
   color: #94989f;
   font-size: 15px;
   margin-bottom: 7px;
   line-height: 1.2;
 }
-/* line 371, ../sass/main.scss */
+/* line 385, ../sass/main.scss */
 .news-block__date {
   color: #dadada;
   font-size: 12px;
 }
 
-/* line 377, ../sass/main.scss */
+/* line 391, ../sass/main.scss */
 .sidebar-block {
   float: right;
   width: 31%;
-  padding: 12px;
+  padding: 25px 10px 17px 15px;
+  background: #ebedef;
+}
+/* line 396, ../sass/main.scss */
+.sidebar-block__headline {
+  margin-bottom: 18px;
+}
+/* line 399, ../sass/main.scss */
+.sidebar-block__content {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+.sidebar-block__content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 404, ../sass/main.scss */
+.news-list-item {
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  *zoom: 1;
+}
+/* line 408, ../sass/main.scss */
+.news-list-item:last-child {
+  margin-bottom: 25px;
+}
+/* line 38, ../../../../../../jekyll/ruby/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+.news-list-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 412, ../sass/main.scss */
+.news-list-item__img-link {
+  float: left;
+  margin-right: 15px;
+}
+/* line 416, ../sass/main.scss */
+.news-list-item__img {
+  width: 80px;
+  height: 80px;
+}
+/* line 420, ../sass/main.scss */
+.news-list-item__headline {
+  overflow: hidden;
+  max-height: 56px;
+  overflow: hidden;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+/* line 427, ../sass/main.scss */
+.news-list-item__link {
+  text-decoration: underline;
+}
+/* line 429, ../sass/main.scss */
+.news-list-item__link:hover {
+  text-decoration: none;
+}
+/* line 433, ../sass/main.scss */
+.news-list-item__meta {
+  color: #d2d1d1;
+  font-size: 12px;
+}
+/* line 437, ../sass/main.scss */
+.news-list-item__views {
+  float: right;
+}
+/* line 440, ../sass/main.scss */
+.news-list-item__views-text {
+  vertical-align: middle;
+}
+/* line 443, ../sass/main.scss */
+.news-list-item__date {
+  float: left;
+}
+/* line 446, ../sass/main.scss */
+.news-list-item__icon {
+  width: 15px;
+  height: 10px;
+  color: #c3c4c6;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 3px;
 }
