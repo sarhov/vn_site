@@ -1,3 +1,362 @@
 ---
 layout: default
+title: Главная
 ---
+
+ <div class="top-block top-block_index wrapper"> 
+  <div class="inner clearfix">
+   <div class="top-block__left">
+     <header class="top-block__header">
+       <img src="{{site.baseurl}}content/author.png" alt="Сергеем Цыпляевым" class="top-block__image">
+       <h2 class="top-block__headline gl-headline">
+         Итоги недели с Сергеем Цыпляевым
+       </h2>
+       <!-- /.top-block__headline -->
+     </header>
+     <!-- /.-top-block__header -->
+     <section class="top-block-articles">
+       <ul class="top-block-articles__list">
+         <li class="top-block-articles__item">
+          <a href="#" class="top-block-articles__link">Депутаты горсовета нарушали закон и мешали журналистам работать</a>
+        </li>
+        <!-- /.top-block-articles__item -->
+        <li class="top-block-articles__item">
+          <a href="#" class="top-block-articles__link">Депутаты Николаевского горсовета взялись решать проблему нехватки программистов  </a>
+        </li>
+        <!-- /.top-block-articles__item -->
+        <li class="top-block-articles__item">
+          <a href="#" class="top-block-articles__link">Николаевские депутаты "регионалы" о Налоговом кодексе: мнения разошлись</a>
+        </li>
+        <!-- /.top-block-articles__item -->
+      </ul>
+      <div class="more-link more-link_top-block">
+        <a href="" class="more-link__link">Все записи</a>
+      </div>
+      <!-- /.more-link more-link_top-block -->
+      <!-- /.top-block-articles__list -->
+    </section>
+    <!-- /.top-block-articles -->
+  </div>
+  <!-- /.top-block__left -->
+  <div class="top-block__right">
+    <a href="#" class="top-box">
+      <h3 class="top-box__headline gl-headline"> 
+        Общее дело
+      </h3>
+      <!-- /.top-box__headline -->
+      <h4 class="top-box__subheadline">
+        Толковый словарь 
+      </h4>
+      <!-- /.top-box__subheadline -->
+    </a>
+    <a href="" class="top-box">
+      <h3 class="top-box__headline gl-headline">
+        Дураки и дороги
+      </h3>
+      <!-- /.top-box__headline -->
+      <h4 class="top-box__subheadline ">
+        Наши проблемы
+      </h4>
+      <!-- /.top-box__subheadline -->
+    </a>
+  </div>
+  <!-- /.top-block__right -->
+</div>
+<!-- top-block inner -->
+</div>
+<!-- /.top-block top-block_index --> 
+
+<section class="center-block wrapper">
+  <div class="inner center-block__inner clearfix">
+  
+          {% include news-blocks.html modificator='index' %}
+
+          <div class="sidebar-block sidebar-block_news-list">
+            <h1 class="sidebar-block__headline sidebar-block__headline_sidebar gl-headline">Новости</h1>
+            <!-- /.sidebar-block__headline sidebar-block__headline_sidebar -->
+            <section class="sidebar-block__content sidebar-block__content_news-list">
+
+              <article class="news-list-item">
+                <a href="article.html" class="news-list-item__img-link">
+                  <img src="{{site.baseurl}}content/news-list-img_1.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+                </a>
+                <h1 class="news-list-item__headline">
+                  <a href="" class="news-list-item__link">НАТО проведет учения в странах Восточной Европы</a>
+                </h1>
+                <!-- /.news-list-item__headline -->
+                <div class="news-meta news-meta_news-list-item">
+                  <time class="news-meta__date" datetime="07-11-2014 16:00">
+                    07.11.2014   
+                  </time>
+                  <!-- /.news-list-item__date --> 
+                  <div class="news-meta__views">
+                    <span class="news-meta__views-text">761</span>
+                    <svg class="icon icon-views news-meta__icon"><use xlink:href="#icon-views"></use></svg>
+                  </div>
+                  <!-- /.news-list-item__views -->
+                </div>
+                <!-- /.news-meta news-meta_news-list-item -->
+              </article>
+              <!-- /.news-list-item -->
+
+              <article class="news-list-item">
+                <a href="article.html" class="news-list-item__img-link">
+                  <img src="{{site.baseurl}}content/news-list-img_2.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+                </a>
+                <h1 class="news-list-item__headline">
+                  <a href="" class="news-list-item__link">В аэропорту "Киев" задерживаются рейсы из-за сильного тумана
+                  </a>
+                </h1>
+                <!-- /.news-list-item__headline -->
+                <div class="news-meta news-meta_news-list-item">
+                  <time class="news-meta__date" datetime="07-11-2014 16:00">
+                    07.11.2014   
+                  </time>
+                  <!-- /.news-list-item__date --> 
+                  <div class="news-meta__views">
+                    <span class="news-meta__views-text">761</span>
+                    <svg class="icon icon-views news-meta__icon"><use xlink:href="#icon-views"></use></svg>
+                  </div>
+                  <!-- /.news-list-item__views -->
+                </div>
+                <!-- /.news-meta news-meta_news-list-item -->
+              </article>
+              <!-- /.news-list-item -->
+
+              <article class="news-list-item">
+                <a href="article.html" class="news-list-item__img-link">
+                  <img src="{{site.baseurl}}content/news-list-img_3.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+                </a>
+                <h1 class="news-list-item__headline">
+                  <a href="" class="news-list-item__link">Подписан закон о выделении средств  бойцам АТО
+                  </a>
+                </h1>
+                <!-- /.news-list-item__headline -->
+                <div class="news-meta news-meta_news-list-item">
+                  <time class="news-meta__date" datetime="07-11-2014 16:00">
+                    07.11.2014   
+                  </time>
+                  <!-- /.news-list-item__date --> 
+                  <div class="news-meta__views">
+                    <span class="news-meta__views-text">761</span>
+                    <svg class="icon icon-views news-meta__icon"><use xlink:href="#icon-views"></use></svg>
+                  </div>
+                  <!-- /.news-list-item__views -->
+                </div>
+                <!-- /.news-meta news-meta_news-list-item -->
+              </article>
+              <!-- /.news-list-item -->
+
+              <article class="news-list-item">
+                <a href="article.html" class="news-list-item__img-link">
+                  <img src="{{site.baseurl}}content/news-list-img_4.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+                </a>
+                <h1 class="news-list-item__headline">
+                  <a href="" class="news-list-item__link">Чехии с рекламных щитов в Праге, - ФОТО
+                  </a>
+                </h1>
+                <!-- /.news-list-item__headline -->
+                <div class="news-meta news-meta_news-list-item">
+                  <time class="news-meta__date" datetime="07-11-2014 16:00">
+                    07.11.2014   
+                  </time>
+                  <!-- /.news-list-item__date --> 
+                  <div class="news-meta__views">
+                    <span class="news-meta__views-text">761</span>
+                    <svg class="icon icon-views news-meta__icon"><use xlink:href="#icon-views"></use></svg>
+                  </div>
+                  <!-- /.news-list-item__views -->
+                </div>
+                <!-- /.news-meta news-meta_news-list-item -->
+              </article>
+              <!-- /.news-list-item -->
+
+              <article class="news-list-item">
+                <a href="article.html" class="news-list-item__img-link">
+                  <img src="{{site.baseurl}}content/news-list-img_5.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+                </a>
+                <h1 class="news-list-item__headline">
+                  <a href="" class="news-list-item__link">В аэропорту "Киев" задерживаются рейсы из-за сильного тумана
+                  </a>
+                </h1>
+                <!-- /.news-list-item__headline -->
+                <div class="news-meta news-meta_news-list-item">
+                  <time class="news-meta__date" datetime="07-11-2014 16:00">
+                    07.11.2014   
+                  </time>
+                  <!-- /.news-list-item__date --> 
+                  <div class="news-meta__views">
+                    <span class="news-meta__views-text">761</span>
+                    <svg class="icon icon-views news-meta__icon"><use xlink:href="#icon-views"></use></svg>
+                  </div>
+                  <!-- /.news-list-item__views -->
+                </div>
+                <!-- /.news-meta news-meta_news-list-item -->
+              </article>
+              <!-- /.news-list-item -->
+
+            </section>
+            <!-- /.sidebar-block__content sidebar-block__content_news-list -->
+            <div class="more-link"><a href="" class="more-link__link">Все новости</a></div>
+          </div>
+          <!-- /.sidebar-block sidebar-block_news-list -->
+        </div>
+        <!-- /.inner -->
+      </section>
+      <!-- /.center-block wrapper -->
+
+      <section class="bottom-block-wrapper wrapper">
+        <div class="bottom-block__inner inner clearfix">
+          <div class="bottom-block  bottom-block_left">
+            <div class="bottom-block-box bottom-block-box_video">
+              <h1 class="bottom-block-box__headline gl-headline">Видео</h1>
+              <section class=" news-list news-list_video">
+                <article class="news-list-item news-list-item_video">
+                  <a href="article.html" class="news-list-item__img-link">
+                    <img src="{{site.baseurl}}content/news-list-img_1.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+                  </a>
+                  <h1 class="news-list-item__headline">
+                    <a href="" class="news-list-item__link">НАТО проведет учения в странах Восточной Европы</a>
+                  </h1>
+                  <!-- /.news-list-item__headline -->
+                  <div class="news-meta news-meta_news-list-item">
+                    <time class="news-meta__date" datetime="07-11-2014 16:00">
+                      07.11.2014   
+                    </time>
+                    <!-- /.news-list-item__date --> 
+                    <div class="news-meta__views">
+                      <span class="news-meta__views-text">761</span>
+                      <svg class="icon icon-views news-meta__icon"><use xlink:href="#icon-views"></use></svg>
+                    </div>
+                    <!-- /.news-list-item__views -->
+                  </div>
+                  <!-- /.news-meta news-meta_news-list-item -->
+                </article>
+                <!-- /.news-list-item -->
+                <article class="news-list-item news-list-item_video">
+                  <a href="article.html" class="news-list-item__img-link">
+                    <img src="{{site.baseurl}}content/news-list-img_1.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+                  </a>
+                  <h1 class="news-list-item__headline">
+                    <a href="" class="news-list-item__link">НАТО проведет учения в странах Восточной Европы</a>
+                  </h1>
+                  <!-- /.news-list-item__headline -->
+                  <div class="news-meta news-meta_news-list-item">
+                    <time class="news-meta__date" datetime="07-11-2014 16:00">
+                      07.11.2014   
+                    </time>
+                    <!-- /.news-list-item__date --> 
+                    <div class="news-meta__views">
+                      <span class="news-meta__views-text">761</span>
+                      <svg class="icon icon-views news-meta__icon"><use xlink:href="#icon-views"></use></svg>
+                    </div>
+                    <!-- /.news-list-item__views -->
+                  </div>
+                  <!-- /.news-meta news-meta_news-list-item -->
+                </article>
+                <!-- /.news-list-item -->
+              </section>
+              <!-- /.news-list -->
+              <div class="more-link"><a href="" class="more-link__link">Все видео</a></div>
+            </div>
+            <!-- /.bottom-block-box -->
+
+            <div class="bottom-block-box bottom-block-box_audio">
+              <h1 class="bottom-block-box__headline gl-headline">Аудио</h1>
+              <section class=" news-list news-list_audio">
+
+                <article class="news-list-item news-list-item_audio">
+<!--                 <a href="article.html" class="news-list-item__img-link">
+                  <img src="{{site.baseurl}}content/news-list-img_1.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+                </a> -->
+                <h1 class="news-list-item__headline">
+                  <a href="" class="news-list-item__link">НАТО проведет учения в странах Восточной Европы</a>
+                </h1>
+                <!-- /.news-list-item__headline -->
+                <audio controls id="audio" src="{{site.baseurl}}content/news1.mp3" class="news-list-item__audio">
+
+                </audio>
+                <div class="news-meta news-meta_news-list-item news-meta_download">
+                  <a href="{{site.baseurl}}content/news1.mp3" download="НАТО проведет учения в странах Восточной Европы" class="news-meta__download">
+                    <svg class="icon icon-download news-meta__icon news-meta__icon_download"><use xlink:href="#icon-download"></use></svg>
+                    <span class="news-meta__download-text">
+                      Скачать mp3-файл (35.6 Мб, 96 kbps)
+                    </span>
+                  </a>
+                  <!-- /.news-list-item__date --> 
+                  <div class="news-meta__views">
+                    <span class="news-meta__views-text">761</span>
+                    <svg class="icon icon-views news-meta__icon"><use xlink:href="#icon-views"></use></svg>
+                  </div>
+                  <!-- /.news-list-item__views -->
+                </div>
+                <!-- /.news-meta news-meta_news-list-item -->
+              </article>
+              <!-- /.news-list-item -->
+              
+                <article class="news-list-item news-list-item_audio">
+<!--                 <a href="article.html" class="news-list-item__img-link">
+                  <img src="{{site.baseurl}}content/news-list-img_1.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+                </a> -->
+                <h1 class="news-list-item__headline">
+                  <a href="" class="news-list-item__link">НАТО проведет учения в странах Восточной Европы</a>
+                </h1>
+                <!-- /.news-list-item__headline -->
+                <audio controls id="audio" src="{{site.baseurl}}content/news1.mp3" class="news-list-item__audio">
+
+                </audio>
+                <div class="news-meta news-meta_news-list-item news-meta_download">
+                  <a href="{{site.baseurl}}content/news1.mp3" download="НАТО проведет учения в странах Восточной Европы" class="news-meta__download">
+                    <svg class="icon icon-download news-meta__icon news-meta__icon_download"><use xlink:href="#icon-download"></use></svg>
+                    <span class="news-meta__download-text">
+                      Скачать mp3-файл (35.6 Мб, 96 kbps)
+                    </span>
+                  </a>
+                  <!-- /.news-list-item__date --> 
+                  <div class="news-meta__views">
+                    <span class="news-meta__views-text">761</span>
+                    <svg class="icon icon-views news-meta__icon"><use xlink:href="#icon-views"></use></svg>
+                  </div>
+                  <!-- /.news-list-item__views -->
+                </div>
+                <!-- /.news-meta news-meta_news-list-item -->
+              </article>
+              <!-- /.news-list-item -->
+
+            </section>
+            <!-- /.news-list -->
+            <div class="more-link"><a href="" class="more-link__link">Все аудио</a></div>
+          </div>
+          <!-- /.bottom-block-box -->
+        </div>
+        <!-- /.bottom-block__left -->
+        <div class="bottom-block bottom-block_right">
+            
+            <div class="bottom-block-box bottom-block-box_books">
+              <h1 class="bottom-block-box__headline gl-headline">Советуем прочитать</h1>
+              <section class=" news-list news-list_books">
+
+                <article class="news-list-item news-list-item_books">
+                <a href="article.html" class="news-list-item__img-link">
+                  <img src="{{site.baseurl}}content/news-list-books_1.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+                </a>
+              </article>
+              <!-- /.news-list-item -->
+              
+                <article class="news-list-item news-list-item_books">
+                <a href="article.html" class="news-list-item__img-link">
+                  <img src="{{site.baseurl}}content/news-list-books_2.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+                </a>
+              </article>
+              <!-- /.news-list-item -->
+              
+            </section>
+            <!-- /.news-list -->
+          </div>
+          <!-- /.bottom-block-box -->
+        </div>
+        <!-- /.bottom-block__right -->
+      </div>
+      <!-- /.bottom-block__inner inner -->
+    </section>
+    <!-- /.bottom-block wrapper -->

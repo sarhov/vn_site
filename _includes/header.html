@@ -1,6 +1,6 @@
 <header class="wrapper main-header">
   <div class="header-inner inner clearfix">
-    <a href="{{site.baseurl}}" class="site-logo">
+    <a href="{{site.baseurl}}/" class="site-logo">
       <svg class="icon icon-logo site-logo__logo"><use xlink:href="#icon-logo"></use></svg>
       <!-- /.site-logo__logo -->
       <h1 class="site-logo__title">{{site.title}}</h1>
@@ -38,20 +38,6 @@
 </nav>
 <!-- /.top-bar wrapper -->
 
-<nav class="bottom-bar wrapper">
-  <div class="inner">
-    <ul class="bottom-bar__menu clearfix">
-      {% for bottom in site.bottom-bar-nav %} 
-      <li class="bottom-bar__item">
-        <a href="{{bottom.url}}" class="bottom-bar__link {% if bottom.url == page.url %} is-active {% endif %}">
-          {{bottom.title}}
-        </a>
-      </li>
-      <!-- /.bottom-bar__item -->
-    {% endfor %}
-    </ul>
-    <!-- /.bottom-bar__menu -->
-  </div>
-  <!-- /.inner -->
-</nav>
-<!-- /.bottom-bar wrapper -->
+{% if page.url == '/index.html' %}
+    {% include bottom-bar_index.html %}
+{% endif %}

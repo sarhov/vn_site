@@ -1,0 +1,18 @@
+
+<nav class="bottom-bar wrapper">
+  <div class="inner">
+    <ul class="bottom-bar__menu clearfix">
+      {% for bottom in site.bottom-bar-nav %} 
+      <li class="bottom-bar__item">
+        <a href="{{bottom.url}}" class="bottom-bar__link {% if bottom.url == page.url %} is-active {% endif %}">
+          {{bottom.title}}
+        </a>
+      </li>
+      <!-- /.bottom-bar__item -->
+    {% endfor %}
+    </ul>
+    <!-- /.bottom-bar__menu -->
+  </div>
+  <!-- /.inner -->
+</nav>
+<!-- /.bottom-bar wrapper -->

@@ -1,4 +1,13 @@
 ---
 layout: default
-title: Новости
+title: Статьи
 ---
+
+<div class="wrapper clearfix">
+  <div class="inner">
+    {% include news-blocks.html modificator="wide" %}
+    {% include pagination.html modificator='default' %}
+  </div>
+  <!-- /.inner -->
+</div>
+<!-- /.wrapper -->

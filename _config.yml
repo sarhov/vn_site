@@ -12,7 +12,7 @@ github_username:  sarhov
 
 # Build settings
 markdown: kramdown
-
+include:      ["*.scss"]
 top-nav:
 - title: Новости  
   url: /news.html
