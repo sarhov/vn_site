@@ -15,9 +15,9 @@ markdown: kramdown
 include:      ["*.scss"]
 top-nav:
 - title: Новости  
-  url: /news.html
+  url: news.html
 - title: Статьи  
-  url: /articles.html
+  url: articles.html
 - title: Аудио  
   url: /audio.html
 - title: Видео  
