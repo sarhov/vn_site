@@ -294,7 +294,7 @@ body {
         &_is-current{
           &:before{
             display: none;
-          }
+          }   
           & + li:before{
             display: none; 
           }
