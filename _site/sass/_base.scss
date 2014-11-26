@@ -1,0 +1,465 @@
+@import "compass";
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+* {
+-moz-appearance: none !important;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+
+}
+
+
+/* font faces */
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-UltraLightItalic';
+  src: url('../fonts/HelveticaNeueCyr-UltraLightItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-UltraLight_0';
+  src: url('../fonts/HelveticaNeueCyr-UltraLight_0.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-ThinItalic';
+  src: url('../fonts/HelveticaNeueCyr-ThinItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Thin';
+  src: url('../fonts/HelveticaNeueCyr-Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Medium';
+  src: url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-LightItalic';
+  src: url('../fonts/HelveticaNeueCyr-LightItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Italic';
+  src: url('../fonts/HelveticaNeueCyr-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-BoldItalic';
+  src: url('../fonts/HelveticaNeueCyr-BoldItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Bold';
+  src:  url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-BlackItalic';
+  src: url('../fonts/HelveticaNeueCyr-BlackItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Black';
+  src: url('../fonts/HelveticaNeueCyr-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* END font-faces */
+
+
+
+
+
+
+/* extends for font families */
+
+%hnc_thin-italic{
+  font-family: 'HelveticaNeueCyr-ThinItalic' ;
+} 
+%hnc_thin{
+  font-family: 'HelveticaNeueCyr-Thin' ;
+} 
+%hnc_roman{
+  font-family: 'HelveticaNeueCyr-Roman' ;
+} 
+%hnc_medium{
+  font-family: 'HelveticaNeueCyr-Medium' ;
+} 
+
+%hnc_light{
+  font-family: 'HelveticaNeueCyr-Light', 'Helvetica', sans-serif ;
+} 
+%hnc_italic{
+  font-family: 'HelveticaNeueCyr-Italic' ;
+} 
+
+%hnc_bold-italic{
+  font-family: 'HelveticaNeueCyr-BoldItalic' ;
+} 
+
+%hnc_bold{
+  font-family: 'HelveticaNeueCyr-Bold' ;
+} 
+
+%hnc_light-italic{
+  font-family: 'HelveticaNeueCyr-LightItalic' ;
+} 
+
+%hnc_ultra-light-italic{
+  font-family: 'HelveticaNeueCyr-UltraLightItalic' ;
+} 
+
+
+%hnc_ultra-light-0{
+  font-family: 'HelveticaNeueCyr-UltraLight_0' ;
+} 
+
+
+%hnc_black{
+  font-family: 'HelveticaNeueCyr-Black' ;
+} 
+
+
+%hnc_black-italic{
+  font-family: 'HelveticaNeueCyr-BlackItalic' ;
+} 
+
+/* END extends */
+
+.test1{
+  &:after{
+    content: ' - hnc_thin-italic';
+  }
+  @extend %hnc_thin-italic;
+}
+
+.test2{
+  &:after{
+    content: ' - hnc_thin';
+  }
+  @extend %hnc_thin;
+}
+
+.test3{
+  &:after{
+    content: ' - hnc_roman';
+  }
+  @extend %hnc_roman;
+}
+
+.test4{
+  &:after{
+    content: ' - hnc_medium';
+  }
+  @extend %hnc_medium;
+}
+
+.test5{
+  &:after{
+    content: ' - hnc_light';
+  }
+  @extend %hnc_light;
+}
+
+.test6{
+  &:after{
+    content: ' - hnc_italic';
+  }
+  @extend %hnc_italic;
+}
+
+.test7{
+  &:after{
+    content: ' - hnc_bold-italic';
+  }
+  @extend %hnc_bold-italic;
+}
+
+.test8{
+  &:after{
+    content: ' - hnc_bold';
+  }
+  @extend %hnc_bold;
+}
+
+.test9{
+  &:after{
+    content: ' - hnc_light-italic';
+  }
+  @extend %hnc_light-italic;
+}
+
+.test10{
+  &:after{
+    content: ' - hnc_ultra-light-italic';
+  }
+  @extend %hnc_ultra-light-italic;
+}
+
+.test11{
+  &:after{
+    content: ' - hnc_ultra-light-0';
+  }
+  @extend %hnc_ultra-light-0;
+}
+
+.test12{
+  &:after{
+    content: ' - hnc_black';
+  }
+  @extend %hnc_black;
+}
+
+.test13{
+  &:after{
+    content: ' - hnc_black-italic';
+  }
+  @extend %hnc_black-italic;
+}
+
+
+
+
+// Our variables
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+// $spacing-unit:     30px;
+
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+// @mixin media-query($device) {
+//     @media screen and (max-width: $device) {
+//         @content;
+//     }
+// }
+
+*, *:before, *:after {
+    @include box-sizing(border-box);
+}
+
+.clearfix {
+    @include pie-clearfix;
+    background: none;
+}
+
+// /* unvisited link */
+// a:link {
+//     color: #ddd;
+// }
+
+// /* visited link */
+// a:visited {
+//     color: #ccc;
+// }
+
+// /* mouse over link */
+// a:hover {
+//     color: #9c0;
+// }
+
+// /* selected link */
+// a:active {
+//     color: yellow;
+// }
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+html{
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  @extend %hnc_light;
+}
+
+.wrapper{
+  width: 100%;
+  background:#fff;
+}
+
+// 
+// @TODO: Add docs to tringle!
+//
+@mixin tringle($position, $size, $color) {
+    &:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: $size;
+        @if $position == left {
+            right: 100%;
+            border-color: transparent $color transparent transparent;
+            top: 50%;
+            margin-top: -$size;
+        }
+        @else if $position == right {
+            left: 100%;
+            border-color: transparent transparent transparent $color;
+            top: 50%;
+            margin-top: -$size;
+        }
+        @else if $position == top {
+            left: 50%;
+            border-color: transparent transparent $color transparent;
+            bottom: 100%;
+            margin-left: -$size;
+        }
+        @else if $position == bottom {
+            left: 50%;
+            border-color: $color transparent transparent transparent;
+            top: 100%;
+            margin-left: -$size;
+        }
+    }
+}
+
+a{
+ color: #2e343e;
+}
+
+.inner{
+  width: 970px;
+  padding:0 15px;
+  margin: auto;
+}
+
+.gl-headline{
+      @extend %hnc_medium;
+    font-size: 28px;
+    color: #2e343e;
+}
+
+// 
+// @TODO: Add docs to border-bottom!
+//
+%bb {
+  border-bottom: 1px dotted #b6b6b6;
+}
+  
+$is-left: 66%;
+$is-right: 31%;
