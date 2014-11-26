@@ -6,26 +6,27 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/vn_site/"
-url: "/" # the base hostname & protocol for your site
+url: "./" # the base hostname & protocol for your site
 
 github_username:  sarhov
 
 # Build settings
 markdown: kramdown
 include:      ["*.scss"]
+exclude: ["*.sublime-project"]
 top-nav:
 - title: Новости  
   url: news.html
 - title: Статьи  
   url: articles.html
 - title: Аудио  
-  url: /audio.html
+  url: audio.html
 - title: Видео  
-  url: /vidoes.html
+  url: vidoes.html
 - title: Толковый словарь  
-  url: /explanatory-dictionary.html
+  url: explanatory-dictionary.html
 - title: О проекте  
-  url: /about_project.html
+  url: about_project.html
 
 
 bottom-bar-nav:
