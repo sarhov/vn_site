@@ -15,8 +15,11 @@
     display: none;
 }
 
-.body {
+body {
     background: #fff;
+    min-height: 100%;
+    padding-bottom: 203px;
+    position: relative;
 }
 
 .icon {
@@ -316,6 +319,38 @@
     }
 }
 
+
+.alphabet-filter{
+  padding-bottom: 10px;
+  font-size: 27px;
+  @extend %hnc_thin;
+  &__line{
+    @include pie-clearfix;
+    margin-bottom: 6px;
+  }
+  &__item{
+    float: left;
+    width: 33px;
+    height: 33px;
+    // line-height: 33px;
+    text-align: center;
+    margin-right: 1px;
+    text-transform: uppercase;
+    &_is-current, &:hover{
+      .alphabet-filter__link{
+        background:#3a96cc;
+        color: #fff;
+      }
+    }
+  }
+  &__link{
+    padding:3px 5px;
+    color: #2e343e;
+    display: block;
+    border-radius: 3px;
+  }
+}
+
 /* top-block */
 
 .top-block {
@@ -385,25 +420,38 @@
     }
 }
 
-// top-box
+// info-box
 
-.top-box {
+.info-box {
     height: 117px;
     padding: 18px 0 0 12px;
     display: block;
     &:hover {
         opacity: 0.9;
     }
-    &:first-child {
-        background: #e1e1d8 url("../images/top-box-bg_first.png") center top / cover repeat;
-        margin-bottom: 40px;
+    &_index:first-child {
+    background: #e1e1d8 url("../images/top-box-bg_first.png") center top / cover repeat;
+        margin-bottom: 47px;
     }
-    &:first-child + & {
+    &_index:first-child + & {
         background: #dadada url("../images/top-box-bg_second.png") 100px 100px / cover repeat;
     }
     &__headline {
         margin-bottom: 8px;
     }
+    &_wide{
+      background: #e1e1d8 url("../images/top-box-bg_first.png") center top / cover repeat;
+      width: 30%;
+      float: left;
+      margin-left: 3.3333333%;
+      margin-bottom: 30px;
+    }
+}
+
+.disctionary-block{
+  padding-top: 25px;
+  margin-left: -3.3333333%;
+  padding-bottom: 10px;
 }
 
 .news-blocks {
@@ -482,6 +530,9 @@
     &__link {
         margin: 0 40px;
     }
+    &.bordered{
+         border-top: 1px dotted #b6b6b6;
+    }
 }
 
 .sidebar-block {
@@ -496,6 +547,9 @@
         @include pie-clearfix;
     }
 }
+
+
+
 
 .news-list-item {
     height: 80px;
@@ -633,6 +687,10 @@
 .footer {
     padding: 55px 0 60px 0;
     background: #f4f5f6;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
 }
 
 .footer-box {
