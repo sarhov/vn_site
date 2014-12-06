@@ -45,3 +45,6 @@
 {% if page.url == '/articles.html' %}
     {% include page-filter.html modificator="articles"  %}
 {% endif %}
+{% if page.url == '/article.html' %}
+    {% include breadcrumbs.html %}
+{% endif %}
