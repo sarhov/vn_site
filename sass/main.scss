@@ -420,6 +420,13 @@ body {
     }
 }
 
+.page-title{
+    padding-top: 30px;
+    color: #2e343e;
+    font-size: 35px; 
+    @extend %hnc_roman;
+}
+
 // info-box
 
 .info-box {
@@ -439,16 +446,19 @@ body {
     &__headline {
         margin-bottom: 8px;
     }
-    &_wide{
+    &_wide, &_problems{
       background: #e1e1d8 url("../images/top-box-bg_first.png") center top / cover repeat;
       width: 30%;
       float: left;
       margin-left: 3.3333333%;
       margin-bottom: 30px;
     }
+    &_problems{
+      background: url("../images/top-box-bg_second.png") repeat scroll 100px 100px / cover  #dadada;
+    }
 }
 
-.disctionary-block{
+.info-boxes{
   padding-top: 25px;
   margin-left: -3.3333333%;
   padding-bottom: 10px;
