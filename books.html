@@ -1,0 +1,36 @@
+---
+layout: page
+title: Книги
+---
+
+<h1 class="page-title page-title_big">
+ {{page.title}}
+</h1>
+<!-- /.top-block__headline -->
+<section class="news-list-books clearfix">
+
+  {% for i in (1..24) %}
+
+  <article class="news-list-item news-list-item_books-page">
+    <a href="article.html" class="news-list-item__img-link">
+      <img src="{{site.baseurl}}content/news-list-books_1.jpg" alt="{{НАТО проведет учения в странах Восточной Европы}}" class="news-list-item__img">
+    </a>
+    <div class="news-meta news-meta_news-list-item news-meta_download">
+    <a href="{{site.baseurl}}content/book1.pdf" download="Долгое время" class="news-meta__download news-meta__download_books">
+        <svg class="icon icon-download news-meta__icon news-meta__icon_download"><use xlink:href="#icon-download"></use></svg>
+        <span class="news-meta__download-text">
+          Скачать PDF-файл
+        </span>
+        <span class="news-meta__download-size">
+          (35.4 мб)
+        </span>
+      </a>
+      <!-- /.news-list-item__date --> 
+    </div>
+    <!-- /.news-meta news-meta_news-list-item -->
+  </article>
+  <!-- /.news-list-item -->
+
+  {% endfor %}
+</section>
+{% include pagination.html modificator="default bordered" %}

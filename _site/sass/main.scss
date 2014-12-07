@@ -901,7 +901,35 @@ body {
       width: 100%;
     }
   }
+  &_books-page{
+    float: left;
+    margin-left: 17px;
+    margin-bottom: 17px;
+    width: 141px;
+    height: 245px;
+    overflow: hidden;
+    @at-root & .news-list-item{
+      &__img-link{
+        float: none;
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        img{
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
 }
+
+
+.news-list-books{
+  padding-top: 30px;
+  margin-left:  -18px;
+}
+
 
 .news-meta {
   color: #d2d1d1;
@@ -932,9 +960,20 @@ body {
   }
   &__download {
     color: #d4d4d4;
+    &_books{
+      color: #d4d4d4;
+      svg{
+        color: #999999;
+      }
+    }
   }
   &__download-text {
     vertical-align: middle;
+  }
+  &__download-size{
+    display: block;
+    padding-left: 19px;
+    padding-top: 4px;
   }
 }
 
