@@ -922,6 +922,15 @@ body {
       }
     }
   }
+  &_audio-page{
+      height: auto;
+      margin-bottom: 25px;
+      @at-root & .news-list-item{
+        &__headline{
+          font-size: 20px;
+        }
+      }
+  }
 }
 
 

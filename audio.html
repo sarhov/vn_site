@@ -1,0 +1,30 @@
+---
+layout: page
+title: Аудио
+---
+
+<section class="news-list-audio clearfix">
+
+  {% for i in (1..24) %}
+
+  <article class="news-list-item news-list-item_audio news-list-item_audio-page">
+    <h1 class="news-list-item__headline">
+      <a href="" class="news-list-item__link">НАТО проведет учения в странах Восточной Европы</a>
+    </h1>
+    <!-- /.news-list-item__headline -->
+    <div class="news-meta news-meta_news-list-item news-meta_download">
+      <a href="{{site.baseurl}}content/news1.mp3" download="НАТО проведет учения в странах Восточной Европы" class="news-meta__download">
+        <svg class="icon icon-download news-meta__icon news-meta__icon_download"><use xlink:href="#icon-download"></use></svg>
+        <span class="news-meta__download-text">
+          Скачать mp3-файл (35.6 Мб, 96 kbps)
+        </span>
+      </a>
+      <!-- /.news-list-item__date --> 
+    </div>
+    <!-- /.news-meta news-meta_news-list-item -->
+  </article>
+  <!-- /.news-list-item -->
+
+  {% endfor %}
+</section>
+{% include pagination.html modificator="default bordered" %}
