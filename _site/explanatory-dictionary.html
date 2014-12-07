@@ -43,7 +43,7 @@
 
 
 <body>
-  <div class="fonts-test">
+<!--   <div class="fonts-test">
    Проверка всех шрифтов
    <p class="test1">русский текст</p>
    <p class="test2">русский текст</p>
@@ -58,7 +58,7 @@
    <p class="test11">русский текст</p>
    <p class="test12">русский текст</p>
    <p class="test13">русский текст</p>
- </div>
+ </div> -->
  <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-facebook" viewBox="0 0 1024 1024">
@@ -129,6 +129,7 @@
 </symbol>
 </defs>
 </svg>
+ 
  <header class="wrapper main-header">
   <div class="header-inner inner clearfix">
     <a href="/" class="site-logo">
@@ -158,7 +159,7 @@
     <ul class="top-bar__menu clearfix">
       
       <li class="top-bar__item">
-        <a href="news.html" class="top-bar__link ">Новости</a>
+        <a href="" class="top-bar__link ">Новости</a>
       </li>
       <!-- /.top-bar__item --> 
       
@@ -183,7 +184,7 @@
       <!-- /.top-bar__item --> 
       
       <li class="top-bar__item">
-        <a href="about_project.html" class="top-bar__link ">О проекте</a>
+        <a href="" class="top-bar__link ">О проекте</a>
       </li>
       <!-- /.top-bar__item --> 
       
@@ -622,7 +623,35 @@
 </nav>
 <!-- /.alphabet-filter -->
 
-% include pagination.html modificator='default bordered' %}
+<nav class="pagination pagination_default bordered">
+<!-- if the prev is NOT link, then goes the part bellow -->
+  <span  class="pagination__link pagination__link_prev pagination__link_not-link">
+  <svg class="icon icon_minus icon_pagination">
+      <use xlink:href="#icon-minus"></use>
+    </svg>
+  </span>  
+  <!-- else if the prev is link, then the following goes, the same with next link, don't forget change class for svg and href to icon for use -->
+<!--   <a  href="#" class="pagination__link pagination__link_prev">
+  <svg class="icon icon_arrow-left icon_pagination">
+      <use xlink:href="#icon-arrow-left"></use>
+    </svg>
+  </a> -->
+  
+      
+  <div class="pagination__states">
+    <span class="pagination__state pagination__state_current">1</span>
+    <span class="pagination-state__separator">/</span>
+    <span class="pagination__state pagination__state_total">5</span>
+  </div>
+  <!-- /.paginations__states -->
+  
+  <a href="#" class="pagination__link pagination__link_next">
+    <svg class="icon icon_arrow-right icon_pagination">
+      <use xlink:href="#icon-arrow-right"></use>
+    </svg>
+  </a>
+</nav>
+<!-- /.pagination -->
   
   
   </div>

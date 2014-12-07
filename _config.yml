@@ -13,10 +13,10 @@ github_username:  sarhov
 # Build settings
 markdown: kramdown
 include:      ["*.scss"]
-exclude: ["*.sublime-project"]
+exclude: ["*.sublime-project", "*.sublime-workspace"]
 top-nav:
 - title: Новости  
-  url: news.html
+  url: #
 - title: Статьи  
   url: articles.html
 - title: Аудио  
@@ -26,7 +26,7 @@ top-nav:
 - title: Толковый словарь  
   url: explanatory-dictionary.html
 - title: О проекте  
-  url: about_project.html
+  url: #
 
 
 bottom-bar-nav:
