@@ -42,7 +42,7 @@
     {% include bottom-bar_index.html %}
 {% endif %}
 
-{% if page.url == '/articles.html' %}
+{% if page.url == '/articles.html' or '/videos.html' %}
     {% include page-filter.html modificator="articles"  %}
 {% endif %}
 {% if page.url == '/article.html' %}
