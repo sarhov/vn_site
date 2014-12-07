@@ -1,0 +1,58 @@
+---
+layout: page
+title: Итоги этой недели с Сергеем Цыпляевым
+---
+
+   <div class="top-block__left  top-block__left_page">
+     <header class="top-block__header">
+       <!-- <img src="{{site.baseurl}}content/author.png" alt="Сергеем Цыпляевым" class="top-block__image"> -->
+       <h2 class="top-block__headline  gl-headline">
+         {{page.title}}
+       </h2>
+       <!-- /.top-block__headline -->
+     </header>
+     <!-- /.-top-block__header -->
+     <section class="top-block-articles">
+       <ul class="top-block-articles__list">
+         <li class="top-block-articles__item">
+          <a href="#" class="top-block-articles__link">Депутаты горсовета нарушали закон и мешали журналистам работать</a>
+        </li>
+        <!-- /.top-block-articles__item -->
+        <li class="top-block-articles__item">
+          <a href="#" class="top-block-articles__link">Депутаты Николаевского горсовета взялись решать проблему нехватки программистов  </a>
+        </li>
+        <!-- /.top-block-articles__item -->
+        <li class="top-block-articles__item">
+          <a href="#" class="top-block-articles__link">Николаевские депутаты "регионалы" о Налоговом кодексе: мнения разошлись</a>
+        </li>
+        <!-- /.top-block-articles__item -->
+      </ul>
+      <div class="more-link more-link_top-block">
+        <a href="{{site.baseurl}}itogi.html" class="more-link__link">Все записи</a>
+      </div>
+      <!-- /.more-link more-link_top-block -->
+      <!-- /.top-block-articles__list -->
+    </section>
+    <!-- /.top-block-articles -->
+    <section class="article-list article-list_empty">
+      {% for i in (1..5) %}
+
+      <article class="b-article b-article_itogi">
+        <h1 class="b-article__headline page-title_default">
+          <a href="{{site.baseurl}}article.html" class="b-article__link">Депутаты горсовета нарушали закон и мешали журналистам работать</a>
+        </h1>
+        <!-- /.page title -->
+        <div class="b-article__short-description editor">
+          <p>По мнению букмекеров высока вероятность того, что команды совместными усилиями забьют много голов.  Самые большие шансы на то, что  команды забьют не менее трех голов (1,70 на Тотал 2,5).То что обе команды забьют гол стоит всего лишь 1,62.</p>
+        </div>
+        <!-- /.b-article__short-description editor -->
+        <a href="" class="b-article__more">Читать подробнее</a>
+      </article>
+      <!-- /.b-article b-article_itogi -->
+    {% endfor %}
+    </section>
+    <!-- /.article-list article-list_empty -->
+  </div>
+  <!-- /.top-block__left -->
+
+  {% include pagination.html modificator="itogi" %}

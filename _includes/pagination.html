@@ -11,12 +11,21 @@
       <use xlink:href="#icon-arrow-left"></use>
     </svg>
   </a> -->
+  {% if include.modificator != 'itogi' %}
+      
   <div class="pagination__states">
     <span class="pagination__state pagination__state_current">1</span>
     <span class="pagination-state__separator">/</span>
     <span class="pagination__state pagination__state_total">5</span>
   </div>
   <!-- /.paginations__states -->
+  {%  else %}
+  <div class="pagination__states pagination__states_text">
+    <a href="{{site.baseurl}}itogi.html" class="pagination__item">Прошлая неделя</a>
+  </div>
+  <!-- /.paginatione__states paginatione__states_text -->
+
+  {% endif %}
   <a href="#" class="pagination__link pagination__link_next">
     <svg class="icon icon_arrow-right icon_pagination">
       <use xlink:href="#icon-arrow-right"></use>
