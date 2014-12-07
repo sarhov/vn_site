@@ -407,7 +407,7 @@ body {
   &__header {
     height: 50px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-overflow: ellipsis;
     img {
       display: inline-block;
@@ -437,8 +437,8 @@ body {
   &__item {
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 41px;
-    margin-bottom: 30px;
+    height: 46px;
+    margin-bottom: 24px;
     font-size: 20px;
     &:last-child {
       margin-bottom: 15px;
@@ -457,6 +457,7 @@ body {
     overflow: hidden;
     display: block;
     color: #2e343e;
+    padding-top: 3px;
     &:hover {
       text-decoration: none;
     }
@@ -839,6 +840,10 @@ body {
   }
 }
 
+.news-list{
+  height: 345px;
+}
+
 .news-list-item {
   height: 80px;
   overflow: hidden;
@@ -860,7 +865,8 @@ body {
     max-height: 56px;
     overflow: hidden;
     font-size: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 6px;
+    line-height: 1.2;
   }
   &__link {
     text-decoration: underline;
@@ -878,7 +884,7 @@ body {
     }
   }
   &_audio {
-    height: 100px;
+    height: auto;
     audio {
       margin-bottom: 6px;
     }
