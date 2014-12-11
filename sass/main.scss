@@ -131,7 +131,6 @@ body {
     text-transform: uppercase;
     float: left;
     margin-top: 15px;
-    @extend %hnc_medium;
     &__title {
       font-size: 24px;
       letter-spacing: 1px;
@@ -221,7 +220,6 @@ body {
   margin-bottom: 17px;
   &__menu {
     position: relative;
-    @extend %hnc_roman;
   }
   &__item {
     float: left;
@@ -237,7 +235,6 @@ body {
       display: inline-block;
       margin-right: 8px;
       float: left;
-      @extend %hnc_light;
     }
   }
   &__link {
@@ -267,7 +264,6 @@ body {
 .bottom-bar {
   margin-bottom: 30px;
   &__menu {
-    @extend %hnc_roman;
   }
   &__item {
     float: left;
@@ -296,7 +292,6 @@ body {
 .page-filter {
   font-size: 14px;
   margin-bottom: 40px;
-  @extend %hnc_light;
   list-style-type: none;
   &__item {
     float: left;
@@ -347,7 +342,6 @@ body {
     .alphabet-filter{
       padding-bottom: 10px;
       font-size: 27px;
-      @extend %hnc_thin;
       &__line{
         @include pie-clearfix;
         margin-bottom: 6px;
@@ -468,7 +462,6 @@ body {
 .page-title{
   padding-top: 30px;
   color: #2e343e;
-  @extend %hnc_roman;
   &_big{
     font-size: 35px; 
   }
@@ -491,7 +484,6 @@ body {
     color: #2e343e;
     text-decoration: underline;
     font-size: 18px;
-    @extend %hnc_light;
     margin-top: -10px;
     display: inline-block;
     &:hover{
@@ -505,14 +497,12 @@ body {
   font-size: 18px;
   line-height: 1.5;
   h1{
-  @extend %hnc_roman;
     margin-bottom: 20px;
     padding-top: 15px;
     color: #2e343e;
     font-size: 30px;
   }
   h2{
-  @extend %hnc_roman;
     margin-bottom: 20px;
     padding-top: 10px;
     color: #2e343e;
@@ -520,7 +510,6 @@ body {
   }
   
   h3{
-  @extend %hnc_roman;
     margin-bottom: 15px;
     padding-top: 5px;
     color: #2e343e;
@@ -528,7 +517,6 @@ body {
   }
 
   h4{
-  @extend %hnc_roman;
     margin-bottom: 10px;
     padding-top: 3px;
     color: #2e343e;
@@ -536,7 +524,6 @@ body {
   }
 
   h5{
-  @extend %hnc_roman;
     margin-bottom: 6px;
     padding-top: 3px;
     color: #2e343e;
@@ -544,7 +531,6 @@ body {
   }
 
   h6{
-  @extend %hnc_roman;
     margin-bottom: 6px;
     padding-top: 3px;
     color: #2e343e;
@@ -565,7 +551,6 @@ body {
 
 .article-info{
   color: #c3c3c3;
-  @extend %hnc_roman;
   font-size: 24px;
   padding: 20px 0;
 }
@@ -589,7 +574,6 @@ body {
 .tags{
   color: #c3c3c3;
   font-size:15px;
-  @extend %hnc_roman;
   margin-right: 5px;
   &__item{
     color: inherit;
@@ -758,7 +742,6 @@ body {
       font-size: 15px;
       margin-bottom: 7px;
       line-height: 1.2;
-      @extend %hnc_thin;
     }
     &__date {
       color: #dadada;
@@ -790,7 +773,6 @@ body {
       display: none;
       font-size: 13px;
       color: #d4d4d4;
-      @extend %hnc_light;
       &__link{
       color: #d4d4d4;
       margin-right: 4px;
@@ -1054,7 +1036,6 @@ body {
       color: #7f8c8d;
       font-size: 14px;
       margin-bottom: 20px;
-      @extend %hnc_thin;
     }
 
     .footer-links {
@@ -1088,6 +1069,5 @@ body {
       color: #7f8c8d;
       font-size: 11px;
       line-height: 1.6;
-      @extend %hnc_thin;
     // letter-spacing: 1px;
   }
